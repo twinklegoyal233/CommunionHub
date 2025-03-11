@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body {
+  margin: auto;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1248px;
+  padding: 0 24px;
+  margin: 0 auto;
+
+  @media (max-width: 1280px) {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+.section-pad {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 767px) {
+  .section-pad {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+
+.top-controls {
+  .tns-controls {
+    position: absolute;
+    top: -16px;
+    right: 0;
+    transform: translateY(-100%);
+  }
+}
